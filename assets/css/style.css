@@ -1619,3 +1619,12 @@ a {
 .w3-hover-border-pale-blue:hover {
   border-color: #e7ffff !important;
 }
+
+/* customs */
+.color-title-home{
+  color: #ffffff;
+}
+
+.display-position-title-home{
+   position: 1000px;
+}
