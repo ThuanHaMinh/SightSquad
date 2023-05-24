@@ -161,31 +161,82 @@ body, html {
 <!-- Category Section -->
 <div id="category" class="w3-light-grey w3-container">
 
-  <h3 class="w3-center">CATEGORY</h3>
-  <p class="w3-center w3-large">Some of Knowledge</p>
+  <h3 class="w3-center">Nhãn Khoa</h3>
+  <p class="w3-center w3-large">Thông tin cơ bản các vấn đề về mắt </p>
 
   <div class="w3-bar w3-black">
-    <button class="w3-bar-item w3-button tablink w3-red" onclick="openCategory(event,'London')" style="width: 25%;">London</button>
-    <button class="w3-bar-item w3-button tablink" onclick="openCategory(event,'Paris')" style="width: 25%;">Paris</button>
-    <button class="w3-bar-item w3-button tablink" onclick="openCategory(event,'Tokyo')" style="width: 25%;">Tokyo</button>
-    <button class="w3-bar-item w3-button tablink" onclick="openCategory(event,'HCM')" style="width: 25%;">HCM</button>
+    <button class="w3-bar-item w3-button tablink w3-red" onclick="openCategory(event,'BENHLY')" style="width: 25%;">BỆNH LÝ</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openCategory(event,'CHUANDOAN')" style="width: 25%;">CHUẨN ĐOÁN</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openCategory(event,'DIEUTRI')" style="width: 25%;">ĐIỀU TRỊ</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openCategory(event,'CHAMSOC')" style="width: 25%;">CHĂM SÓC</button>
   </div>
-  <div id="London" class="w3-container w3-border city">
-    <h2>London</h2>
-    <p>London is the capital city of England.</p>
+
+  <div id="BENHLY" class="w3-container w3-border city">
+    <div class="w3-container w3-light-grey" style="padding:128px 16px">
+      <div class="w3-row-padding">
+        <div class="w3-col m6">
+          <h3>Các bệnh lý mắt phổ biến</h3>
+          <p>Nhãn khoa chẩn đoán và điều trị nhiều loại bệnh lý mắt, bao gồm: 
+            viễn thị (gần quáng), cận thị (xa quáng), đục thủy tinh thể, bệnh kính cận, 
+            viêm kết mạc, viêm giác mạc, bệnh đục thủy tinh thể, bệnh lý cơ nhãn, và các vấn 
+            đề liên quan đến mạch máu và thần kinh mắt.</p>
+        </div>
+        <div class="w3-col m6">
+          <img class="w3-image w3-round-large" src="assets/img/benhlynhankhoa.jpg" alt="Buildings" width="1000px" height="300px">
+        </div>
+      </div>
+    </div>
   </div>
-  <div id="Paris" class="w3-container w3-border city" style="display:none">
-    <h2>Paris</h2>
-    <p>Paris is the capital of France.</p> 
+
+  <div id="CHUANDOAN" class="w3-container w3-border city" style="display:none">
+    <div class="w3-container w3-light-grey" style="padding:128px 16px">
+      <div class="w3-row-padding">
+        <div class="w3-col m6">
+          <h3>Phương pháp chẩn đoán</h3>
+          <p>Bác sĩ nhãn khoa sử dụng nhiều phương pháp chẩn đoán để đánh 
+            giá sức khỏe mắt, bao gồm kiểm tra thị lực, kiểm tra ánh sáng, 
+            kiểm tra áp lực trong mắt, kiểm tra giác mạc và các bước kiểm tra khác
+             để xác định vấn đề mắt cụ thể.</p>
+        </div>
+        <div class="w3-col m6">
+          <img class="w3-image w3-round-large" src="assets/img/chuandoan.jpg" alt="Buildings" width="700" height="394">
+        </div>
+      </div>
+    </div>
   </div>
-  <div id="Tokyo" class="w3-container w3-border city" style="display:none">
-    <h2>Tokyo</h2>
-    <p>Tokyo is the capital of Japan.</p>
+
+  <div id="DIEUTRI" class="w3-container w3-border city" style="display:none">
+    <div class="w3-container w3-light-grey" style="padding:128px 16px">
+      <div class="w3-row-padding">
+        <div class="w3-col m6">
+          <h3>Phương pháp điều trị</h3>
+          <p>Trong nhãn khoa, các phương pháp điều trị có thể bao gồm việc kê đơn kính cận, 
+            cung cấp thuốc nhỏ mắt, phẫu thuật mắt, sử dụng kính hiệu chỉnh, hoặc các phương pháp điều 
+            trị khác như truyền dịch, áp lực nhãn cầu, hoặc điều trị bằng laser.</p>
+        </div>
+        <div class="w3-col m6">
+          <img class="w3-image w3-round-large" src="assets/img/dieutri.jpg" alt="Buildings" width="700" height="394">
+        </div>
+      </div>
+    </div>
   </div>
-  <div id="HCM" class="w3-container w3-border city" style="display:none">
-    <h2>HCM</h2>
-    <p>HCM is the capital of Viet Nam.</p>
+
+  <div id="CHAMSOC" class="w3-container w3-border city" style="display:none">
+    <div class="w3-container w3-light-grey" style="padding:128px 16px">
+      <div class="w3-row-padding">
+        <div class="w3-col m6">
+          <h3>Chăm sóc mắt hàng ngày</h3>
+          <p>Bên cạnh chẩn đoán và điều trị các vấn đề mắt,
+             nhãn khoa cũng khuyến nghị việc chăm sóc mắt hàng ngày như đeo kính chống nắng,
+              tránh tiếp xúc với tác nhân gây tổn thương mắt, và thực hiện các bài tập giãn cơ mắt đều đặn.</p>
+        </div>
+        <div class="w3-col m6">
+          <img class="w3-image w3-round-large" src="assets/img/chamsocmat.jpg" alt="Buildings" width="700" height="394">
+        </div>
+      </div>
+    </div>
   </div>
+
 </div>
 
 
@@ -266,7 +317,7 @@ function w3_close() {
     mySidebar.style.display = "none";
 }
 
-//on_click open
+//on_click open category
 function openCategory(evt, cityName) {
   var i, x, tablinks;
   x = document.getElementsByClassName("city");
