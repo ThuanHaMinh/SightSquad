@@ -182,7 +182,7 @@ body, html {
             đề liên quan đến mạch máu và thần kinh mắt.</p>
         </div>
         <div class="w3-col m6">
-          <img class="w3-image w3-round-large" src="assets/img/benhlynhankhoa.jpg" alt="Buildings" width="1000px" height="300px">
+          <img class="w3-image w3-round-large" src="assets/img/eyes_disease.jpg" alt="Buildings" width="1000px" height="300px">
         </div>
       </div>
     </div>
@@ -254,14 +254,14 @@ body, html {
       <a href="mailto:thuanhm.spkt@gmail.com"> Email: mail@mail.com</a></p>
     <br>
 
-    <form action="/assets/php/send_mail.php" target="_blank">
-      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <form action="https://formspree.io/f/xvonndrz" method="POST">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" id="name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" id="email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" id="subject" required name="Subject"></p>
+      <p><textarea class="w3-input w3-border" type="text" placeholder="Message" id="message" required name="Message"></textarea></p>
       <p>
-        <button class="w3-button w3-black" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        <button id="btn_submit_mail" class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND
         </button>
       </p>
     </form>
@@ -286,9 +286,6 @@ body, html {
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
  
-
-
-
 
 
 <script>
@@ -331,6 +328,7 @@ function openCategory(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " w3-red";
 }
+
 </script>
 
 </body>
