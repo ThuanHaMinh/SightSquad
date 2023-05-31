@@ -1621,3 +1621,16 @@ a {
 }
 
 /* customs */
+.form_input_format_width{
+  padding: 8px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 50%;
+}
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
