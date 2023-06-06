@@ -1626,7 +1626,7 @@ a {
   display: block;
   border: none;
   border-bottom: 1px solid #ccc;
-  width: 50%;
+  width: 100%;
 }
 .column {
   float: left;
@@ -1634,3 +1634,4 @@ a {
   margin-top: 6px;
   padding: 20px;
 }
+

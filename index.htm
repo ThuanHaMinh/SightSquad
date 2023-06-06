@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="icon" type="image/x-icon" href="assets/img/favicon_sightsquad.jpg" />
+<link rel="icon" type="image/x-icon" href="assets/img/sightsquad_logo3.png" />
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
@@ -26,9 +26,38 @@ body, html {
 .bgimg-1 {
   background-position: center;
   background-size: cover;
-  background-image: url("assets/img/bia1.jpg");
+  background-image: url("assets/img/anhbia1.jpg");
   min-height: 100%;
 }
+
+.bgimg-2 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("assets/img/anhbia2.jpg");
+  min-height: 100%;
+}
+
+.bgimg-3 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("assets/img/anhbia3.jpg");
+  min-height: 100%;
+}
+
+.bgimg-4 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("assets/img/anhbia4.jpg");
+  min-height: 100%;
+}
+
+.bgimg-5 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("assets/img/anhbia5.jpg");
+  min-height: 100%;
+}
+
 
 .w3-bar .w3-button {
   padding: 16px;
@@ -85,9 +114,9 @@ body, html {
 </header>
 
 <!-- About Section -->
-<div class="w3-container" style="padding:128px 16px" id="about">
-  <h3 class="w3-center">VỀ CHÚNG TÔI</h3>
-  <p class="w3-center w3-large">Key features of our company</p>
+<div class="w3-container" style="padding:100px 16px" id="about">
+  <h1 class="w3-center"><b>VỀ CHÚNG TÔI</b></h1>
+  <p class="w3-center w3-large"><i>Key features of our company</i></p>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-quarter">
       <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
@@ -156,10 +185,9 @@ body, html {
 </div>
 
 <!-- Category Section -->
-<div id="category" class="w3-light-grey w3-container" style="padding:128px 16px">
-
-  <h3 class="w3-center">NHÃN KHOA</h3>
-  <p class="w3-center w3-large">Thông tin cơ bản các vấn đề về mắt </p>
+<div id="category" class="w3-light-grey w3-container" style="padding:100px 16px">
+  <h1 class="w3-center"><b>NHÃN KHOA</b></h1>
+  <p class="w3-center w3-large"><i>Thông tin cơ bản các vấn đề về mắt</i></p>
 
   <div class="w3-bar w3-black">
     <button class="w3-bar-item w3-button tablink w3-red" onclick="openCategory(event,'BENHLY')" style="width: 25%;">BỆNH LÝ</button>
@@ -238,48 +266,43 @@ body, html {
 
 
 <!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
-  <h3 class="w3-center">LIÊN HỆ</h3>
-  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
-  <div style="margin-top:48px">
-    <div class="column">
+<div class="w3-container w3-light-grey" style="padding:100px 16px" id="contact">
+  <h1 class="w3-center"><b>LIÊN HỆ</b></h1>
+  <p class="w3-center w3-large"><i>Lets get in touch. Send us a message</i> </p>
+  <!-- <div style="margin-top:48px"> -->
+    <div class="form_input_format_width">
       <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> 
         <a href="https://www.google.com/maps/place/Trung+T%C3%A2m+Th%C6%B0%C6%A1ng+M%E1%BA%A1i+V%E1%BA%A1n+H%E1%BA%A1nh/@10.7736304,106.6673316,16.34z/data=!4m15!1m8!3m7!1s0x31752edc7bd9fd65:0x7500396cc3a60d04!2zUXXhuq1uIDEwLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!3b1!8m2!3d10.7745965!4d106.6679542!16s%2Fm%2F03mb_cl!3m5!1s0x31752edddb818ebf:0xfc8c05045f47a3d8!8m2!3d10.7705861!4d106.6694828!16s%2Fg%2F11gdkrbxst">
         HCM 10 District</a></p>
       <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> 
         <a href="tel:+84123456789">Phone: +84 0123456789</a></p>
       <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i>
-        <a href="mailto:thuanhm.spkt@gmail.com"> Email: mail@mail.com</a></p>
+        <a href="mailto:Sightsquadclub@gmail.com"> Email: Sightsquadclub@gmail.com</a></p>
       <br>
   
         <form action="https://formspree.io/f/xvonndrz" method="POST">
-        <label for="fname">Full Name</label>
+        <label for="fname"><b>Tên của bạn</b> </label>
         <p><input class="form_input_format_width w3-border" type="text" placeholder="Name" id="name" required name="Name"></p>
-        <label for="fname">Email</label>
+        <label for="fname"><b>Địa chỉ Email</b> </label>
         <p><input class="form_input_format_width w3-border" type="text" placeholder="Email" id="email" required name="Email"></p>
-        <label for="fname">Mail Subject</label>
+        <label for="fname"><b>Tiêu đề</b></label>
         <p><input class="form_input_format_width w3-border" type="text" placeholder="Subject" id="subject" required name="Subject"></p>
-        <label for="fname">Your Message</label>
+        <label for="fname"> <b>Nội dung bạn muốn gửi đến chúng tôi</b></label>
         <p><textarea rows="5" class="form_input_format_width w3-border" type="text" placeholder="Message" id="message" required name="Message"></textarea></p>
         <p>
           <button id="btn_submit_mail" class="w3-button w3-black" type="submit">
-            <i class="fa fa-paper-plane"></i> SEND MAIL
+            <i class="fa fa-paper-plane"></i>  <b>SEND MESSAGE</b> 
           </button>
         </p>
       </form>
     </div>
-
-    <div class="column">
-      <!-- Image of location/map -->
-      <img src="assets/img/footer_image.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px; border-radius: 10%;">
-    </div>
    
-  </div>
+  <!-- </div> -->
 </div>
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <!-- <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a> -->
   <div class="w3-xlarge w3-section">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
@@ -287,6 +310,9 @@ body, html {
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <div>
+    Mọi thông tin chi tiết xin vui lòng liên hệ địa chỉ <a href="mailto:Sightsquadclub@gmail.com"> Email: Sightsquadclub@gmail.com</a>
   </div>
 </footer>
  
@@ -332,6 +358,25 @@ function openCategory(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " w3-red";
 }
+
+
+// thay đổi ảnh nền sau 2s
+var element = document.getElementById("home");
+var classList = ["bgimg-1", "bgimg-2", "bgimg-3","bgimg-4","bgimg-5"]; // Danh sách các class
+
+var currentIndex = 0; // Chỉ số hiện tại của class
+
+setInterval(function() {
+  element.classList.remove(classList[currentIndex]); // Xóa class hiện tại
+
+  currentIndex++;
+  if (currentIndex >= classList.length) {
+    currentIndex = 0; // Quay lại class đầu tiên nếu đã hết danh sách
+  }
+
+  element.classList.add(classList[currentIndex]); // Thêm class tiếp theo
+}, 3000);
+
 
 </script>
 
