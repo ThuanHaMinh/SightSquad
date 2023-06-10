@@ -22,42 +22,58 @@ body, html {
   line-height: 1.8;
 }
 
-/* Full height image header */
-.bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("assets/img/anhbia1.jpg");
-  min-height: 100%;
+.slideshow {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: bold;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+  mix-blend-mode: difference;
 }
 
-.bgimg-2 {
-  background-position: center;
+.slide {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
   background-size: cover;
-  background-image: url("assets/img/anhbia2.jpg");
-  min-height: 100%;
+  background-position: center;
+  animation: slide 16s linear infinite;
 }
 
-.bgimg-3 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("assets/img/anhbia3.jpg");
-  min-height: 100%;
+@keyframes slide {
+  0%, 20% {
+    transform: translateX(0);
+  }
+  25%, 45% {
+    transform: translateX(-100%);
+  }
+  50%, 70% {
+    transform: translateX(-200%);
+  }
+  75%, 95% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
-.bgimg-4 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("assets/img/anhbia4.jpg");
-  min-height: 100%;
+.slide:nth-child(1) {
+  background-image: url('assets/img/anhbia1.jpg');
 }
 
-.bgimg-5 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("assets/img/anhbia5.jpg");
-  min-height: 100%;
+.slide:nth-child(2) {
+  background-image: url('assets/img/anhbia2.jpg');
 }
 
+.slide:nth-child(3) {
+  background-image: url('assets/img/anhbia3.jpg');
+}
+
+.slide:nth-child(4) {
+  background-image: url('assets/img/anhbia5.jpg');
+}
 
 .w3-bar .w3-button {
   padding: 16px;
@@ -96,22 +112,35 @@ body, html {
 </nav>
 
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
-    <span class="w3-large">Empowering Medical Care with SightSquad</span>
-    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start with us</a></p>
-  </div> 
-  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+
+<header>
+
+  <div class="slideshow w3-display-container w3-grayscale-min" id="home">
+    <div class="slideshow">
+      <div class="slide"></div>
+      <div class="slide"></div>
+      <div class="slide"></div>
+      <div class="slide"></div>
+    </div>
+
+    <div class="w3-display-left w3-text-white" style="padding:48px">
+      <span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
+      <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
+      <span class="w3-large"><i>Empowering Medical Care with SightSquad</i></span>
+      <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start with us</a></p>
+    </div> 
+    <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
   </div>
+
 </header>
+
 
 <!-- About Section -->
 <div class="w3-container" style="padding:100px 16px" id="about">
@@ -197,7 +226,7 @@ body, html {
   </div>
 
   <div id="BENHLY" class="w3-container w3-border city">
-    <div class="w3-container w3-light-grey" style="padding:128px 16px">
+    <div class="w3-container w3-light-grey" style="padding:55px 16px">
       <div class="w3-row-padding">
         <div class="w3-col m6">
           <h3>Các bệnh lý mắt phổ biến</h3>
@@ -214,7 +243,7 @@ body, html {
   </div>
 
   <div id="CHUANDOAN" class="w3-container w3-border city" style="display:none">
-    <div class="w3-container w3-light-grey" style="padding:128px 16px">
+    <div class="w3-container w3-light-grey" style="padding:55px 16px">
       <div class="w3-row-padding">
         <div class="w3-col m6">
           <h3>Phương pháp chẩn đoán</h3>
@@ -231,7 +260,7 @@ body, html {
   </div>
 
   <div id="DIEUTRI" class="w3-container w3-border city" style="display:none">
-    <div class="w3-container w3-light-grey" style="padding:128px 16px">
+    <div class="w3-container w3-light-grey" style="padding:55px 16px">
       <div class="w3-row-padding">
         <div class="w3-col m6">
           <h3>Phương pháp điều trị</h3>
@@ -247,7 +276,7 @@ body, html {
   </div>
 
   <div id="CHAMSOC" class="w3-container w3-border city" style="display:none">
-    <div class="w3-container w3-light-grey" style="padding:128px 16px">
+    <div class="w3-container w3-light-grey" style="padding:55px 16px">
       <div class="w3-row-padding">
         <div class="w3-col m6">
           <h3>Chăm sóc mắt hàng ngày</h3>
@@ -312,7 +341,7 @@ body, html {
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
   <div>
-    Mọi thông tin chi tiết xin vui lòng liên hệ địa chỉ <a href="mailto:Sightsquadclub@gmail.com"> Email: Sightsquadclub@gmail.com</a>
+    Mọi thông tin chi tiết xin vui lòng liên hệ địa chỉ Email: <a href="mailto:Sightsquadclub@gmail.com">Sightsquadclub@gmail.com</a>
   </div>
 </footer>
  
@@ -362,20 +391,20 @@ function openCategory(evt, cityName) {
 
 // thay đổi ảnh nền sau 2s
 var element = document.getElementById("home");
-var classList = ["bgimg-1", "bgimg-2", "bgimg-3","bgimg-4","bgimg-5"]; // Danh sách các class
+var classList = ["bgimg-1", "bgimg-2", "bgimg-3","bgimg-4"]; 
 
-var currentIndex = 0; // Chỉ số hiện tại của class
+var currentIndex = 0; 
 
 setInterval(function() {
-  element.classList.remove(classList[currentIndex]); // Xóa class hiện tại
+  element.classList.remove(classList[currentIndex]); 
 
   currentIndex++;
   if (currentIndex >= classList.length) {
-    currentIndex = 0; // Quay lại class đầu tiên nếu đã hết danh sách
+    currentIndex = 0; 
   }
 
-  element.classList.add(classList[currentIndex]); // Thêm class tiếp theo
-}, 3000);
+  element.classList.add(classList[currentIndex]); 
+}, 2000);
 
 
 </script>
