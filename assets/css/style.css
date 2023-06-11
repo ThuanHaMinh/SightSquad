@@ -1643,4 +1643,8 @@ a {
 .custome-container-category{
   border-radius: 10%;
 }
-
+.header-text-custome{
+  font-weight: bold;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+  mix-blend-mode: difference;
+}
