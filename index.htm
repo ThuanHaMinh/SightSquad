@@ -72,7 +72,7 @@ body, html {
 }
 
 .slide:nth-child(4) {
-  background-image: url('assets/img/anhbia5.jpg');
+  background-image: url('assets/img/anhbia4.jpg');
 }
 
 .w3-bar .w3-button {
@@ -172,14 +172,20 @@ body, html {
 
 <!-- Promo Section - "We know design" -->
 <div class="w3-container w3-light-grey" style="padding:128px 16px">
-  <div class="w3-row-padding">
+  <div class="w3-row-padding promo-section-customes">
     <div class="w3-col m6">
       <h3>We know design.</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
+      <p>Chào các bạn, chúng tôi, Sight Squad, là một câu lạc bộ nhãn khoa nơi chuyên hỗ trợ 
+        và cung cấp kiến thức về các bệnh lý nhãn khoa có chỉ định phẫu thuật cũng như mô 
+        phỏng các phương pháp phẫu thuật nhãn khoa đã và đang được sử dụng trong nước 
+        cũng như trên thế giới. Đồng thời đây cũng là nơi giao lưu, chia sẻ 
+        giữa các đồng nghiệp về kiến thức Nhãn Khoa hay các case lâm sàng đặc biệt.</p>
       <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th">&nbsp;</i> View Our Works</a></p>
     </div>
     <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="assets/img/bia2.jpg" alt="Buildings" width="700" height="394">
+      <video class="w3-image w3-round-large" src="assets/video/Sightsquad_intro.mp4" id="myVideo">
+        Sorry, your browser doesn't support embedded videos.
+     </video>
     </div>
   </div>
 </div>
@@ -317,7 +323,7 @@ body, html {
 
 <!-- Contact Section -->
 <div class="w3-container w3-light-grey" style="padding:100px 16px" id="contact">
-  <h1 class="w3-center"><b>LIÊN HỆ & ĐĂNG KÍ</b></h1>
+  <h1 class="w3-center"><b>  ĐĂNG KÍ & LIÊN HỆ</b></h1>
   <p class="w3-center w3-large"><i>Lets get in touch. Send us a message</i> </p>
   <!-- <div style="margin-top:48px"> -->
     <div class="form_input_format_width">
@@ -325,7 +331,7 @@ body, html {
         Address: &nbsp <a href="https://www.google.com/maps/place/Trung+T%C3%A2m+Th%C6%B0%C6%A1ng+M%E1%BA%A1i+V%E1%BA%A1n+H%E1%BA%A1nh/@10.7736304,106.6673316,16.34z/data=!4m15!1m8!3m7!1s0x31752edc7bd9fd65:0x7500396cc3a60d04!2zUXXhuq1uIDEwLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!3b1!8m2!3d10.7745965!4d106.6679542!16s%2Fm%2F03mb_cl!3m5!1s0x31752edddb818ebf:0xfc8c05045f47a3d8!8m2!3d10.7705861!4d106.6694828!16s%2Fg%2F11gdkrbxst">
         HCM 10 District</a></p>
       <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> 
-        Phone: &nbsp<a href="tel:+84123456789"> +84 0123456789</a></p>
+        Phone: &nbsp<a href="tel:+84123456789"> +84 123456789</a></p>
       <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i>
         Email: &nbsp<a href="mailto:Sightsquadclub@gmail.com">  Sightsquadclub@gmail.com</a></p>
       <br>
@@ -427,6 +433,20 @@ setInterval(function() {
   element.classList.add(classList[currentIndex]); 
 }, 2000);
 
+// Lắng nghe sự kiện cuộn
+window.addEventListener('scroll', function () {
+    var video = document.getElementById('myVideo');
+    var videoPosition = video.getBoundingClientRect();
+
+    // Kiểm tra nếu video ra khỏi vùng nhìn thấy của người dùng
+    if (
+      videoPosition.bottom < 0 || videoPosition.top > (window.innerHeight || document.documentElement.clientHeight)
+    ) {
+      video.pause(); // Dừng video
+    } else {
+      video.play(); // Phát video
+    }
+  });
 
 </script>
 
