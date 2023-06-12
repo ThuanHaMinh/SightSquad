@@ -236,7 +236,7 @@ hr {
   margin: 20px 0;
 }
 .w3-image {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 img {
@@ -877,7 +877,7 @@ a {
   border-radius: 4px;
 }
 .w3-round-large {
-  border-radius: 8px;
+  border-radius: 20px;
 }
 .w3-round-xlarge {
   border-radius: 16px;
@@ -1644,11 +1644,25 @@ a {
   border-radius: 10%;
 }
 .header-text-custome{
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 50px;
   font-weight: bold;
-  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
-  mix-blend-mode: difference;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  /* mix-blend-mode: difference; */
 }
 
 .promo-section-customes{
   margin-left: 100px;
+}
+
+.about-padding-custom{
+  float: left;
+  width: 24.99999%;
+  padding: 0 46px;
+}
+
+.content-center-promo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
