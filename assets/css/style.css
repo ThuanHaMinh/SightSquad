@@ -1637,7 +1637,7 @@ a {
 
 .custome-image-category{
   max-width: 100%;
-  height: 350px;
+  height: 100%;
 }
 
 .custome-container-category{
@@ -1666,3 +1666,10 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+.comming-soon{
+  text-align: center;
+  font-size: 40px;
+}
+
+
