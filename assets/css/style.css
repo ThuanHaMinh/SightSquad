@@ -1672,4 +1672,26 @@ a {
   font-size: 40px;
 }
 
+.navBar_icon_link{
+  display: flex;
+  float: left;
+  width: auto;
+  border: none;
+  display: block;
+  outline: 0;
+}
+
+.button-custome-nav{
+  border: none;
+  display: inline-block;
+  padding: 0px 0px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
 

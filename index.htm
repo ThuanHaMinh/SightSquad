@@ -85,7 +85,8 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">SightSquad</a>
+      <a href="#home" class="w3-bar-item w3-button w3-wide"><img class="custome-image-category w3-circle" src="assets/img/sightsquad_logo3.png" alt="Buildings" width="30px" height="30px"> SightSquad</a>
+
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="#home" class="w3-bar-item w3-button"><i class="fa fa-user"></i> HOME</a>
@@ -95,9 +96,10 @@ body, html {
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    
   </div>
 </div>
 
@@ -137,6 +139,27 @@ body, html {
   </div>
 </header>
 
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px;">
+  <div class="w3-row-padding content-center-promo" >
+    <div class="w3-col">
+      <h3 class="header-text-custome">Sightsquadclub</h3>
+      <p style="text-align: justify;">Chào các bạn, chúng tôi là Sight Squad, một câu lạc bộ chuyên về nhãn khoa,
+         tập trung vào việc hỗ trợ và chia sẻ kiến thức về các bệnh lý liên quan đến mắt, 
+         bao gồm cả các phương pháp phẫu thuật đã và đang được áp dụng trong nước và 
+         trên toàn thế giới. Chúng tôi không chỉ mô phỏng những phương pháp phẫu thuật này, 
+         mà còn tạo điều kiện để các chuyên gia cùng trao đổi, chia sẻ kiến thức về nhãn khoa 
+         và các trường hợp lâm sàng đặc biệt.
+      </p>
+      <p><a href="#category" class="w3-button w3-black" style="border-radius: 20px;"><i class="fa fa-th">&nbsp;</i> <i>Xem thêm về nhãn khoa</i></a></p>
+    </div>
+    <div class="w3-col s9">
+      <video class="w3-image w3-round-large" src="assets/video/sightsquad.mp4" id="myVideo">
+        Sorry, your browser doesn't support embedded videos.
+     </video>
+    </div>
+  </div>
+</div>
 
 <!-- About Section -->
 <div class="w3-container" style="padding:100px 16px" id="about">
@@ -166,48 +189,6 @@ body, html {
   </div>
 </div>
 
-<!-- Promo Section - "We know design" -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px;">
-  <div class="w3-row-padding content-center-promo" >
-    <div class="w3-col">
-      <h3 class="header-text-custome">Sightsquadclub</h3>
-      <p style="text-align: justify;">Chào các bạn, chúng tôi là Sight Squad, một câu lạc bộ chuyên về nhãn khoa,
-         tập trung vào việc hỗ trợ và chia sẻ kiến thức về các bệnh lý liên quan đến mắt, 
-         bao gồm cả các phương pháp phẫu thuật đã và đang được áp dụng trong nước và 
-         trên toàn thế giới. Chúng tôi không chỉ mô phỏng những phương pháp phẫu thuật này, 
-         mà còn tạo điều kiện để các chuyên gia cùng trao đổi, chia sẻ kiến thức về nhãn khoa 
-         và các trường hợp lâm sàng đặc biệt.
-      </p>
-      <p><a href="#category" class="w3-button w3-black" style="border-radius: 20px;"><i class="fa fa-th">&nbsp;</i> <i>Xem thêm về nhãn khoa</i></a></p>
-    </div>
-    <div class="w3-col s9">
-      <video class="w3-image w3-round-large" src="assets/video/sightsquad.mp4" id="myVideo">
-        Sorry, your browser doesn't support embedded videos.
-     </video>
-    </div>
-  </div>
-</div>
-
-<!-- Promo Section "Statistics" -->
-<!-- <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">14+</span>
-    <br>Partners
-  </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">55+</span>
-    <br>Projects Done
-  </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">89+</span>
-    <br>Happy Clients
-  </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">150+</span>
-    <br>Meetings
-  </div>
-</div> -->
-
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">&times;</span>
@@ -218,17 +199,15 @@ body, html {
 </div>
 
 <!-- Category Section -->
-<div id="category" class="w3-container" style="padding:100px 16px">
+<div id="category" class="w3-container w3-light-grey" style="padding:100px 16px">
   <h1 class="w3-center"><b>NHÃN KHOA</b></h1>
   <p class="w3-center w3-large"><i>Thông tin cơ bản các vấn đề về mắt</i></p>
-
   <div class="w3-bar w3-black">
     <button class="w3-bar-item w3-button tablink w3-red" onclick="openCategory(event,'BENHLY')" style="width: 25%;">BỆNH LÝ</button>
     <button class="w3-bar-item w3-button tablink" onclick="openCategory(event,'CHUANDOAN')" style="width: 25%;">CHUẨN ĐOÁN</button>
     <button class="w3-bar-item w3-button tablink" onclick="openCategory(event,'DIEUTRI')" style="width: 25%;">ĐIỀU TRỊ</button>
     <button class="w3-bar-item w3-button tablink" onclick="openCategory(event,'CHAMSOC')" style="width: 25%;">CHĂM SÓC</button>
   </div>
-
   <div id="BENHLY" class="w3-border city content-center-promo">
     <div class="w3-container" style="padding:55px 16px">
       <div class="w3-row-padding">
@@ -238,11 +217,9 @@ body, html {
             viễn thị (gần quáng), cận thị (xa quáng), đục thủy tinh thể, bệnh kính cận, 
             viêm kết mạc, viêm giác mạc, bệnh đục thủy tinh thể, bệnh lý cơ nhãn, và các vấn 
             đề liên quan đến mạch máu và thần kinh mắt.</p>
-
             <p>
               <a href="assets/html/benhli.htm"><i class="fa fa-link" aria-hidden="true">&nbsp</i>Các bệnh lý về mắt</a>
             </p>
-
         </div>
         <div class="w3-col m6">
           <img class="custome-image-category w3-round-large" src="assets/img/eyes_disease.jpg" alt="Buildings" width="1000px" height="300px">
@@ -260,12 +237,10 @@ body, html {
             giá sức khỏe mắt, bao gồm kiểm tra thị lực, kiểm tra ánh sáng, 
             kiểm tra áp lực trong mắt, kiểm tra giác mạc và các bước kiểm tra khác
              để xác định vấn đề mắt cụ thể.</p>
-
           <p>
           <a href="assets/html/chuandoan.htm"><i class="fa fa-link" aria-hidden="true">&nbsp</i>Các phương pháp chuẩn đoán</a>
           </p>
         </div>
-        
         <div class="w3-col m6">
           <img class="custome-image-category w3-round-large" src="assets/img/chuandoan.jpg" alt="Buildings" width="700" height="394">
         </div>
@@ -281,14 +256,10 @@ body, html {
           <p>Trong nhãn khoa, các phương pháp điều trị có thể bao gồm việc kê đơn kính cận, 
             cung cấp thuốc nhỏ mắt, phẫu thuật mắt, sử dụng kính hiệu chỉnh, hoặc các phương pháp điều 
             trị khác như truyền dịch, áp lực nhãn cầu, hoặc điều trị bằng laser.</p>
-
           <p>
             <a href="assets/html/dieutri.htm"><i class="fa fa-link" aria-hidden="true">&nbsp</i>Các phương pháp điều trị</a>
           </p>
         </div>
-
-        
-
         <div class="w3-col m6">
           <img class="custome-image-category w3-round-large" src="assets/img/dieutri.jpg" alt="Buildings" width="700" height="394">
         </div>
@@ -308,7 +279,6 @@ body, html {
             <a href="assets/html/chamsoc.htm"><i class="fa fa-link" aria-hidden="true">&nbsp</i>Các biện pháp chăm sóc</a>
           </p>
         </div>
-        
         <div class="w3-col m6">
           <img class="custome-image-category w3-round-large" src="assets/img/chamsocmat.jpg" alt="Buildings" width="700" height="394">
         </div>
@@ -319,7 +289,7 @@ body, html {
 
 
 <!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:100px 16px" id="contact">
+<div class="w3-container" style="padding:100px 16px" id="contact">
   <h1 class="w3-center"><b>  ĐĂNG KÍ & LIÊN HỆ</b></h1>
   <p class="w3-center w3-large"><i>Hãy giữ liên lạc và gửi tin nhắn đến cho chúng tôi</i> </p>
     <div class="form_input_format_width">
